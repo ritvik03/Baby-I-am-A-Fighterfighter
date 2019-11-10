@@ -20,6 +20,7 @@ import pygame
 import random
 import numpy as np
 import matplotlib.pyplot as plt
+import argparse
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -377,6 +378,11 @@ def argumentParsing():
 
 def main():
 
+    ap = argparse.ArgumentParser()
+    # ap.add_argument("-i", "--image", required=False, help="Path to the image", default="bg.jpg")
+    ap.add_argument("-c", "--customRoom", required=False, help="CSV file where room details are saved (Room Name)", default="room.csv")
+    args = vars(ap.parse_args())
+
     """ Main Program """
 
     # Call this function so the Pygame library can initialize itself
@@ -536,5 +542,4 @@ def main():
     pygame.quit()
 
 if __name__ == "__main__":
-    argumentParsing()
     main()
