@@ -21,6 +21,8 @@
    OR 
     
    #### $ python roomDesign.py --name <name of room>.csv
+    
+6. ### NOTE: Press 's' after you finish drawing the obstacles to save them, the window would close automatically.
   
 5. Once the custom room is created, run
    
