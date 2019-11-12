@@ -33,6 +33,11 @@
    
    #### $ python game_final --customRoom <custom room name>.csv
    (This would use the specified customRoom)
+    
+   OR
+   
+   #### $ python game4.py --customRoom <custom_room_name>.csv
+   (for full game)
   
 By default, there are 5 rooms arranged in a circular manner (- 1st - 2nd - 3rd - 4th - 5th - 1st -). And only 5th room is customizable. To customize other rooms and keep number of rooms dynamic, pyQt additions are required.
 
